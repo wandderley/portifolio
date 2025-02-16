@@ -1,0 +1,78 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --bege: #ece0d0;
+    --destaque: #f04452;
+    --preto: #1d1d1d;
+}
+
+body{
+    background-color: var(--bege);
+}
+
+#home, #skills, #projects{
+    width: 100vw;
+    height: 100vh;
+}
+
+#home{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#container-home{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "dev            laptop"
+    "description    laptop";
+    justify-content: center;
+}
+
+#home  h1{
+    grid-area: dev;
+    font-size: 4em;
+    font-family: Franklin Gothic Heavy;
+    width: 700px;
+    color: var(--destaque);    
+    align-self: self-start;
+}
+
+#home  p{    
+    grid-area: description;
+    font-size: 1.5em;
+    font-family: Franklin Gothic Heavy;
+    width: 550px;
+    color: var(--preto);
+}
+
+#laptop-container {
+    grid-area: laptop;
+    position: relative; 
+}
+
+#laptop{
+    height: 300px;
+    position: relative;
+}
+
+#icons-container{
+    display: flex; 
+    position: absolute;
+    top: 25%;
+    gap: 80px;
+    height: 200px;
+    left: calc(50% - 60px);
+}
+
+#linkedin-ico, #github-ico{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
