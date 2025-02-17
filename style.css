@@ -302,4 +302,22 @@ body {
         padding: 5px;
         gap: 50px;
     }
+
+
+    /* SECTION PROJECT */
+    #projects{
+        padding: 1em;
+    }
+
+    .card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card img{
+        background-size: cover;
+        width: 100% !important;
+    }
+
+
 }
