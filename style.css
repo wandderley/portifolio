@@ -12,9 +12,38 @@
     --preto: #4e4e4e;
 }
 
+.technologies{
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid var(--preto);
+    
+}
+.html{
+    background-color: rgb(255, 159, 124);
+}
+.css{
+    background-color: rgb(183, 177, 238);
+}
+.javascript{
+    background-color: rgb(206, 206, 138);
+}
+.git{
+    background-color: rgb(243, 196, 110);
+}
+.csharp{
+    background-color: rgb(212, 160, 247);
+}
+.bootstrap{
+    background-color: rgb(204, 165, 255);
+}
+.sqlserver{
+    background-color: rgb(226, 226, 226);
+}
 
 body {
     background-color: var(--bege);
+    
 }
 
 .title {
@@ -148,6 +177,52 @@ body {
     margin-top: 10px;
     text-align: center;
 }
+
+
+/* PROJETOS */
+#projects{
+    padding: 0px 50px;
+}
+.title-project{
+    color: var(--preto);
+    font-size: 1.6em;    
+}
+#projects > h2{
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#projects span>p{
+    padding-top: 10px;
+}
+#img-project > img{
+    border-radius: 15px;
+    width: 500px;
+    height: 300px;
+    border: 2px solid var(--preto);
+    background-size: cover;
+    background-position: center;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+#description-project{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    max-width: 700px;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
 
 
 
