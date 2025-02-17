@@ -200,4 +200,31 @@ body {
         width: 35px;
         height: 35px;
     }
+
+
+    /* SECTION SKILLS */
+    .title{
+        font-size: 2em;
+    }
+
+    #description-skills > p {
+        text-align: center;
+        padding: 5px;
+        font-size: 16px !important;
+    } 
+
+    #skills  img{
+        width: 60px;
+        height: auto;
+    }
+
+    .ico-skill > p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .container-icons-skills {
+        padding: 5px;
+        gap: 50px;
+    }
 }
