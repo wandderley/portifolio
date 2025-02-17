@@ -8,7 +8,8 @@
 :root {
     --bege: #ece0d0;
     --destaque: #f04452;
-    --preto: #1d1d1d;
+    /* --preto: #1d1d1d; */
+    --preto: #4e4e4e;
 }
 
 
@@ -16,17 +17,25 @@ body {
     background-color: var(--bege);
 }
 
+.title {
+    color: var(--destaque);
+    font-size: 3em;
+    font-family: Franklin Gothic Heavy;
+}
+
 #home,
 #skills,
 #projects {
     width: 100vw;
     height: 100vh;
+    width: 100%;
 }
 
 #home {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 #container-home {
@@ -83,14 +92,83 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+/* SECTION SKILLS */
+
+#skills {
+    padding-top: 10px;
+    width: 100%;
+    background-color: var(--preto);
+}
+
+/* #skills> #description-skills > h2 {
+    padding-left: 10%;
+} */
+
+#skills>#description-skills>p {
+    /* padding-left: 10%; */
+    padding-top: 20px;
+    font-size: 1.5em;
+    color: var(--preto);
+    font-family: Franklin Gothic Heavy;
+    color: var(--bege);
+}
+
+.ico-skill>p {
+    color: var(--bege);
+}
+
+#description-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20%;
+}
+
+#content-skills {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-icons-skills {
+    max-width: 900px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.legenda-ico {
+    font-family: Franklin Gothic Heavy;
+    color: var(--preto);
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+
+    #home,
+    #skills,
+    #projects {
+        width: 100vw;
+        height: 100vh;
+        width: 100%;
+    }
+
     #container-home {
         width: 100%;
         padding: 5px;
 
         display: grid;
         grid-template-rows: auto auto auto;
-        /* Três linhas */
         grid-template-areas:
             "dev"
             "description"
@@ -105,21 +183,21 @@ body {
         font-size: 2em;
     }
 
-    #home p {
-        padding: 1em;
-        font-size: .9em;
+    #home p{
+        padding: .8em;
+        font-size: .8em;
         max-width: 700px !important;
     }
 
-    #laptop{
+    #laptop {
         width: 350px;
         height: auto;
     }
 
     #linkedin-ico,
     #github-ico {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-}
+        position: absolute;
+        width: 35px;
+        height: 35px;
+    }
 }
