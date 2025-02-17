@@ -199,8 +199,22 @@ body {
     gap: 5rem;
 }
 
+/* #projects ul li {
+    list-style: none; 
+    color: var(--destaque);
+    list-style: disc;
+}
+
+#projects ul li span {
+    color: black;
+}
+#projects ul{
+    padding-left: 1.5rem;
+} */
+
 #projects span>p{
     padding-top: 10px;
+    color: black;
 }
 #img-project > img{
     border-radius: 15px;
