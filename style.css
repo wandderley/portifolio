@@ -19,7 +19,6 @@
 }
 
 .content-container{
-    display: flex;
     width: 100%;
     max-width: 1200px;
 }
@@ -81,7 +80,9 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 1180px;
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
 }
 
 .left-home-presentation{
@@ -141,39 +142,44 @@ body {
     background-color: var(--preto);
 }
 
+.description-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 20%;
+    gap: 15px;
+}
+.container-icons-skills {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   height: 80%;
+}
 
-
-#skills>#description-skills>p {
-    padding-top: 20px;
+#skills .description-skills> p {
     font-size: 1.5em;
     color: var(--preto);
     font-family: Franklin Gothic Heavy;
     color: var(--bege);
 }
 
-.ico-skill>p {
-    color: var(--bege);
-}
-
-
-
-
-
-.container-icons-skills {
-    max-width: 900px;
-    padding: 10px;
+.cont-container-skills{
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
 }
 
-.legenda-ico {
-    font-family: Franklin Gothic Heavy;
-    color: var(--preto);
-    margin-top: 10px;
-    text-align: center;
+.ico-skill{
+    margin: 30px;
+    & p {
+        color: var(--bege);
+        font-family: Franklin Gothic Heavy;
+        margin-top: 10px;
+        text-align: center;
+    }
 }
+
+
 
 
 /* PROJETOS */
