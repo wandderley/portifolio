@@ -12,13 +12,36 @@
     --preto: #4e4e4e;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+#home,
+#skills,
+#projects {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* ESTILIZAÇÃO DOS ICONES */
 .technologies{
     font-size: 14px;
     padding: 5px;
     border-radius: 15px;
-    border: 1px solid var(--preto);
-    
+    border: 1px solid var(--preto);    
 }
+
 .html{
     background-color: rgb(255, 159, 124);
 }
@@ -46,38 +69,34 @@ body {
     
 }
 
+/* SECTION HOME */
 .title {
     color: var(--destaque);
     font-size: 3em;
     font-family: Franklin Gothic Heavy;
 }
 
-#home,
-#skills,
-#projects {
-    width: 100vw;
-    height: 100vh;
-    width: 100%;
-}
-
-#home {
+.presentation-home{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-
+    justify-content: center;
+    max-width: 1180px;
 }
 
-#container-home {
-    display: grid;
-    grid-template-areas:
-        "dev            laptop"
-        "description    laptop";
-    justify-content: center;
-    grid-row: auto-fit;
+.left-home-presentation{
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+}
+.right-home-presentation{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #home h1 {
-    grid-area: dev;
     font-size: 4em;
     font-family: Franklin Gothic Heavy;
     max-width: 700px;
@@ -94,48 +113,37 @@ body {
     color: var(--preto);
 }
 
-#laptop-container {
-    grid-area: laptop;
-    position: relative;
-}
 
 #laptop {
     height: 300px;
-    position: relative;
+    width: auto;
 }
 
-#icons-container {
+.icons-container{
+    position: absolute;
     display: flex;
-    position: absolute;
-    top: 25%;
-    gap: 80px;
-    height: 200px;
-    left: calc(50% - 60px);
+    top: 65px;
+    gap: 40px;   
+
+    & a img {
+        width: 40px;
+        height: 40px;
+        animation: pulse 1.5s ease-in-out infinite;
+    }
 }
 
-#linkedin-ico,
-#github-ico {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    animation: pulse 1.5s ease-in-out infinite;
-}
+
+
 
 
 /* SECTION SKILLS */
-
 #skills {
-    padding-top: 10px;
-    width: 100%;
     background-color: var(--preto);
 }
 
-/* #skills> #description-skills > h2 {
-    padding-left: 10%;
-} */
+
 
 #skills>#description-skills>p {
-    /* padding-left: 10%; */
     padding-top: 20px;
     font-size: 1.5em;
     color: var(--preto);
@@ -147,21 +155,9 @@ body {
     color: var(--bege);
 }
 
-#description-skills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 20%;
-}
 
-#content-skills {
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 
 .container-icons-skills {
     max-width: 900px;
@@ -182,7 +178,6 @@ body {
 
 /* PROJETOS */
 #projects{
-    padding: 0px 50px;
 }
 .title-project{
     color: var(--preto);
@@ -199,18 +194,6 @@ body {
     gap: 5rem;
 }
 
-/* #projects ul li {
-    list-style: none; 
-    color: var(--destaque);
-    list-style: disc;
-}
-
-#projects ul li span {
-    color: black;
-}
-#projects ul{
-    padding-left: 1.5rem;
-} */
 
 #projects span>p{
     padding-top: 10px;
@@ -229,7 +212,7 @@ body {
     flex-direction: row;
 }
 
-#description-project{
+.description-project{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -255,96 +238,6 @@ body {
 
 
 @media screen and (max-width: 992px) {
-
-    #home,
-    #skills,
-    #projects {
-        width: 100vw;
-        height: 100vh;
-        width: 100%;
-    }
-
-    #container-home {
-        width: 100%;
-        padding: 5px;
-
-        display: grid;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "dev"
-            "description"
-            "laptop";
-        text-align: center;
-        justify-items: center;
-        width: 100%;
-    }
-
-    #home h1 {
-        padding: .3em;
-        font-size: 2em;
-    }
-
-    #home p{
-        padding: .8em;
-        font-size: .8em;
-        max-width: 700px !important;
-    }
-
-    #laptop {
-        width: 350px;
-        height: auto;
-    }
-
-    #linkedin-ico,
-    #github-ico {
-        position: absolute;
-        width: 35px;
-        height: 35px;
-    }
-
-
-    /* SECTION SKILLS */
-    .title{
-        font-size: 2em;
-    }
-
-    #description-skills > p {
-        text-align: center;
-        padding: 5px;
-        font-size: 16px !important;
-    } 
-
-    #skills  img{
-        width: 60px;
-        height: auto;
-    }
-
-    .ico-skill > p {
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .container-icons-skills {
-        padding: 5px;
-        gap: 50px;
-    }
-
-
-    /* SECTION PROJECT */
-    #projects{
-        padding: 1em;
-    }
-
-    .card{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card img{
-        background-size: cover;
-        width: 100% !important;
-    }
-
 
 }
 
