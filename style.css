@@ -47,6 +47,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    padding: 10px;
     max-width: 1100px;
     width: 100%;
     height: 100%;
@@ -55,20 +57,29 @@ body {
 .left-home-presentation{
     display: flex;
     flex-direction: column;
-    max-width: 650px;
-    min-width: 300px;
+    flex:1;
+    max-width: 100%;
+    min-width: 400px;
 }
+
 .right-home-presentation{
     position: relative;
     display: flex;
+    flex:1;
     flex-direction: column;
     align-items: center;
 }
 
+#laptop {
+    width: 400px;
+    height: auto;
+}
+
 #home h1 {
-    font-size: 4em;
+    word-break: normal;
+    font-size: 3em;
     font-family: Franklin Gothic Heavy;
-    max-width: 700px;
+    max-width: 600px;
     min-width: 300px;
     color: var(--destaque);
     align-self: self-start;
@@ -76,18 +87,12 @@ body {
 
 #home p {
     padding: .2em;
-    grid-area: description;
     font-size: 1.5em;
     font-family: Franklin Gothic Heavy;
-    max-width: 550px;
     color: var(--preto);
 }
 
 
-#laptop {
-    height: 300px;
-    width: auto;
-}
 
 .icons-container{
     position: absolute;
@@ -101,9 +106,6 @@ body {
         animation: pulse 1.5s ease-in-out infinite;
     }
 }
-
-
-
 
 
 /* SECTION SKILLS */
@@ -169,15 +171,17 @@ body {
 .container-projetos{
     display: flex;
     flex-direction: column;
+    
     height: 100%;
+    padding: 0 10px;
 }
 
 .card{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
     width: 100%;
-    
     margin-bottom: 50px;
 }
 
@@ -186,7 +190,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
     min-width: 300px;
     width: 50%;
 }
@@ -197,8 +201,9 @@ body {
 }
 .img-project > img{
     border: 2px solid var(--preto);
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 300px;
     border-radius: 15px;
     object-fit: cover;
     background-position: center;
@@ -246,10 +251,6 @@ body {
 }
 
 
-
-@media screen and (max-width: 1071px) {
-   
-}
 
 
 
