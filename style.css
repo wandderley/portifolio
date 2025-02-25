@@ -8,17 +8,16 @@
 :root {
     --bege: #ece0d0;
     --destaque: #f04452;
-    /* --preto: #1d1d1d; */
     --preto: #4e4e4e;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.content-container{
+.content-container {
     width: 100%;
     max-width: 1200px;
 }
@@ -32,7 +31,7 @@
 
 body {
     background-color: var(--bege);
-    
+
 }
 
 /* SECTION HOME */
@@ -42,7 +41,7 @@ body {
     font-family: Franklin Gothic Heavy;
 }
 
-.presentation-home{
+.presentation-home {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -54,18 +53,18 @@ body {
     height: 100%;
 }
 
-.left-home-presentation{
+.left-home-presentation {
     display: flex;
     flex-direction: column;
-    flex:1;
+    flex: 1;
     max-width: 100%;
     min-width: 400px;
 }
 
-.right-home-presentation{
+.right-home-presentation {
     position: relative;
     display: flex;
-    flex:1;
+    flex: 1;
     flex-direction: column;
     align-items: center;
 }
@@ -92,13 +91,11 @@ body {
     color: var(--preto);
 }
 
-
-
-.icons-container{
+.icons-container {
     position: absolute;
     display: flex;
     top: 65px;
-    gap: 40px;   
+    gap: 40px;
 
     & a img {
         width: 40px;
@@ -113,7 +110,7 @@ body {
     background-color: var(--preto);
 }
 
-.description-skills{
+.description-skills {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -121,29 +118,31 @@ body {
     gap: 15px;
     align-items: center;
 }
+
 .container-icons-skills {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: center;
-   height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
 }
 
-#skills .description-skills> p {
+#skills .description-skills>p {
     font-size: 1.5em;
     color: var(--preto);
     font-family: Franklin Gothic Heavy;
     color: var(--bege);
 }
 
-.cont-container-skills{
+.cont-container-skills {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.ico-skill{
+.ico-skill {
     margin: 30px;
+
     & p {
         color: var(--bege);
         font-family: Franklin Gothic Heavy;
@@ -157,36 +156,38 @@ body {
 
 /* PROJETOS */
 
-.content-container > h2{
+.content-container>h2 {
     display: flex;
     align-items: center;
     height: 20%;
     justify-content: center;
 }
-.title-project{
+
+.title-project {
     color: var(--preto);
-    font-size: 1.6em;    
+    font-size: 1.6em;
 }
 
-.container-projetos{
+.container-projetos {
     display: flex;
     flex-direction: column;
-    
+
     height: 100%;
     padding: 0 10px;
 }
 
-.card{
+.card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     width: 100%;
     margin-bottom: 50px;
+    min-height: 250px;
 }
 
 
-.description-project{
+.description-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,22 +196,33 @@ body {
     width: 50%;
 }
 
-#projects span>p{
-    padding-top: 10px;
-    color: black;
-}
-.img-project > img{
-    border: 2px solid var(--preto);
-    max-width: 500px;
-    width: 100%;
+
+.img-project {
+    max-width: 400px;
     max-height: 300px;
-    border-radius: 15px;
-    object-fit: cover;
-    background-position: center;
 }
 
-.description-text p {
-    line-height: 1.6; 
+.img-project>img {
+    object-fit: cover;
+    background-position: center;
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+.description-text {
+    line-height: 1.6;
+    padding-top: 10px;
+    color: black;
+
+    & a {
+        text-decoration: none;
+        color: var(--destaque);
+        font-weight: 600;
+    }
 }
 
 .tags {
@@ -221,32 +233,38 @@ body {
 }
 
 /* ESTILIZAÇÃO DOS ICONES */
-.technologies{
+.technologies {
     font-size: 14px;
     padding: 5px;
     border-radius: 15px;
-    border: 1px solid var(--preto);    
+    border: 1px solid var(--preto);
 }
 
-.html{
+.html {
     background-color: rgb(255, 159, 124);
 }
-.css{
+
+.css {
     background-color: rgb(183, 177, 238);
 }
-.javascript{
+
+.javascript {
     background-color: rgb(206, 206, 138);
 }
-.git{
+
+.git {
     background-color: rgb(243, 196, 110);
 }
-.csharp{
+
+.csharp {
     background-color: rgb(212, 160, 247);
 }
-.bootstrap{
+
+.bootstrap {
     background-color: rgb(204, 165, 255);
 }
-.sqlserver{
+
+.sqlserver {
     background-color: rgb(226, 226, 226);
 }
 
@@ -261,10 +279,12 @@ body {
         transform: scale(1);
         opacity: 1;
     }
+
     50% {
         transform: scale(1.1);
         opacity: 0.8;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
